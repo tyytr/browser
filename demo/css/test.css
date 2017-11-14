@@ -32,3 +32,11 @@ body{
 #tp {
 	padding-bottom:50px;
 }
+#tea h2{
+	text-align: center;
+	font-weight: bold;
+}
+#tea .row  .col-md-7 p{
+	font-size: 16px;
+	line-height: 30px;
+}

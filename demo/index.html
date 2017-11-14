@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="css/test.css"/>
 </head>
 <body>
+  <!-- 导航栏 -->
 <div class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation" >
 	<div class="container">
 		<div class="navbar-header">
@@ -22,8 +23,8 @@
 			<a class="navbar-brand" href="#">浏览器</a> </div>
 		<div class="collapse navbar-collapse" id="navBar">
 			<ul class="nav navbar-nav">
-				<li><a href="#">综述</a></li>
-				<li><a href="#">简述</a></li>
+				<li><a href="#accordion">综述</a></li>
+				<li><a href="#Kernel" class="kernel">内核</a></li>
 				<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" >特点<span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="#tab-Chrome">Chrome</a></li>
@@ -38,8 +39,9 @@
 		</div>
 	</div>
 </div>
+<!-- 导航栏下面的轮播图 -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
-	<!-- Indicators -->
+	<!-- 轮播的小点点-->
 	<ol class="carousel-indicators">
 		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -47,8 +49,7 @@
 		<li data-target="#carousel-example-generic" data-slide-to="3"></li>
 		<li data-target="#carousel-example-generic" data-slide-to="4"></li>
 	</ol>
-	
-	<!-- Wrapper for slides -->
+	<!-- 轮播的图片 -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active"> <img src="images/chrome-big.jpg" alt="Chrome" />
 			<div class="carousel-caption">Chrome</div>
@@ -65,10 +66,11 @@
 		<div class="item"> <img src="images/ie-big.jpg" alt="Ie">
 			<div class="carousel-caption">Ie</div>
 		</div>
-	<!-- Controls --> 
+	<!-- 前后翻页 --> 
 	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">前一页</span> </a> 
 	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">后一页</span> </a> 
 </div>
+<!-- 暂无 -->
 <div class="container" id="container-s">
 	<div class="row">
 		<div class="col-md-4">
@@ -86,8 +88,121 @@
 	</div>
 	<hr class="divi">
 	<div>
-
-  <!-- Nav tabs -->
+  <!-- 综述内容 -->
+  <div class="panel-group" id="accordion">
+  <h2>浏览器的综述</h2><br>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+           href="#collapseOne">
+          Google Chrome 综述：
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        Google Chrome是一款由Google公司开发的网页浏览器，该浏览器基于其他开源软件撰写，包括WebKit，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。
+软件的名称是来自于称作Chrome的网络浏览器GUI（图形使用者界面）。软件的beta测试版本在2008年9月2日发布，提供50种语言版本，有Windows、OS X、Linux、Android、以及iOS版本提供下载。
+谷歌将在谷歌浏览器Chrome上推出“小程序”增强型网页应用（ Progressive Web Apps，简称 PWAs），是目前正处于测试版的Chrome 57新增的功能。
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+           href="#collapseTwo">
+          Mozilla Firefox 综述：
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        Mozilla Firefox，中文俗称“火狐”（正式缩写为Fx或fx，非正式缩写为FF），是一个自由及开放源代码的网页浏览器，使用Gecko排版引擎，支持多种操作系统，如Windows、Mac OS X及GNU/Linux等。
+该浏览器提供了两种版本，普通版和ESR（Extended Support Release，延长支持）版，ESR版本是 Mozilla 专门为那些无法或不愿每隔六周就升级一次的企业打造。Firefox ESR 版的升级周期为 42 周，而普通 Firefox 的升级周期为 6 周。
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+           href="#collapseThree">
+          Opera 综述：
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器，是跨平台浏览器可以在Windows、Mac和Linux三个操作系统平台上运行。Opera浏览器创始于1995年4月。
+2016年2月确定被奇虎360和昆仑万维收购。
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+           href="#collapseFour">
+          Safari 综述：
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse">
+      <div class="panel-body">
+        Safari，是苹果计算机的操作系统Mac OS中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。Safari 是一款浏览器、一个平台，也是对锐意创新的公开邀请。无论在 Mac、PC 或 iPod touch 上运行，Safari 都可提供极致愉悦的网络体验方式，更不断地改写浏览器的定义。
+Safari,苹果计算机的操作系统Mac OS中浏览器，用来取代之前的Internet Explorer for Mac。
+Safari使用了KDE的KHTML作为浏览器的计算核心。 该浏览器已支持Windows平台，但是与运行在Mac OS X上的safari相比，有些功能出现丢失。
+Safari也是iPhone手机、iPod Touch、iPad平板电脑中iOS指定默认浏览器。Safari 以惊人速度渲染网页。
+与 Mac、PC 及 iPod touch、iPhone、iPad完美兼容。让最爱网站一目了然。聪明的它还会检查拼写和语法。
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+           href="#collapseFive">
+          Internet Explorer 综述：
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse">
+      <div class="panel-body">
+        Internet Explorer，是微软公司推出的一款网页浏览器。原称Microsoft Internet Explorer(6版本以前)和Windows Internet Explorer
+(7、8、9、10、11版本)，简称IE。在IE7以前，中文直译为“网络探路者”，但在IE7以后官方便直接俗称"IE浏览器"。
+2015年3月微软确认将放弃IE品牌。转而在windows 10上，Microsoft Edge取代了。微软于2015年10月宣布2016年1月起停止支持老版本IE浏览器。
+2016年1月12日，微软公司宣布于这一天停止对IE 8/9/10三个版本的技术支持，用户将不会再收到任何来自微软官方的IE安全更新；
+作为替代方案，微软建议用户升级到IE 11或者改用Microsoft Edge浏览器。
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="divi">
+  <!-- 浏览器内核 -->
+  <div id="Kernel">
+    <h2>浏览器的内核</h2><br>
+    <div class="table-responsive" >
+      <table class="table table-striped table-hover table-bordered" id="">
+        <thead>
+          <tr>
+            <th>Chrome</th><th>Firefox</th><th>Opera</th><th>Safari</th><th>Ie</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#Kernel">Blink内核</a></td><td>Gecko内核</td><td>Presto内核</td><td>Webkit内核</td><td>Trident内核</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+  <hr class="divi">
+  <div>
+    <h2>浏览器的特点</h2><br>
+  <!-- 浏览器特点tab -->
 	<ul class="nav nav-tabs" role="tablist" id="tab-list">
 		<li role="presentation" class="active"><a href="#tab-Chrome" aria-controls="home" role="tab" data-toggle="tab">Chrome</a></li>
 		<li role="presentation"><a href="#tab-Firefox" aria-controls="profile" role="tab" data-toggle="tab">Firefox</a></li>
@@ -95,13 +210,16 @@
 		<li role="presentation"><a href="#tab-Safari" aria-controls="settings" role="tab" data-toggle="tab">Safari</a></li>
 		<li role="presentation"><a href="#tab-Ie" aria-controls="settings" role="tab" data-toggle="tab">Ie</a></li>
   	</ul>
-
-  <!-- Tab panes -->
   	<div class="tab-content" id="tea">
 		<div role="tabpanel" class="tab-pane active" id="tab-Chrome">
 			<div class="row">
 				<div class="col-md-7">
 					<h2>Chrome浏览器</h2>
+          <p class="pe">Google Chrome浏览器基于开源引擎WebKit、Blink，其中包含谷歌Gears。
+Chrome提供了浏览器扩展框架，可以制作与Adobe-AIR类似的混合应用。
+包含V8 Javascript虚拟机，这个多线程的虚拟机可以加速Javascript的执行。
+具备隐私浏览模式，可以让用户无需在本地机器上登录即可使用，这个功能与微软IE8中的Incognito类似。
+浏览器将内置防止“网络钓鱼“及恶意软件功能。</p>
 				</div>
 				<div class="col-md-5">
 					<img src="images/chrome-logo.jpg" alt="Chrome">
@@ -115,6 +233,7 @@
 				</div>
 				<div class="col-md-7">
 					<h2>Firefox浏览器</h2>
+          <p>Firefox 是个简单、快速、轻便以及高扩充性的浏览器。说到火狐，就不得不提它那丰富而强大的插件，它可以让用户更方便的查询信息。对于做网站优化的朋友来说火狐浏览器是第一选择。</p>
 				</div>
 			</div>
 		</div>
@@ -122,6 +241,7 @@
 			<div class="row">
 				<div class="col-md-7">
 					<h2>Opera浏览器</h2>
+          <p>Opera浏览器因为它的快速、小巧和比其他浏览器更佳的标准兼容性获得了国际上的最终用户和业界媒体的承认，并在网上受到很多人的推崇。OperaSoftware开发的Opera浏览器是一款适用于各种平台、操作系统和嵌入式网络产品的高品质、多平台产品。</p>
 				</div>
 				<div class="col-md-5">
 					<img src="images/opera-logo.jpg" alt="Opera">
@@ -135,6 +255,7 @@
 				</div>
 				<div class="col-md-7">
 					<h2>Safari浏览器</h2>
+          <p>苹果公司自己的内核，也是苹果的Safari浏览器使用的内核。 使用Webkit引擎，包含WebCore排版引擎及JavaScriptCore解析引擎，均是从KDE的KHTML及KJS引擎衍生而来，它们都是自由软件，在GPL条约下授权，同时支持BSD系统的开发。所以Webkit也是自由软件，同时开放源代码。在安全方面不受IE、Firefox的制约，所以Safari浏览器在国内还是很安全的。</p>
 				</div>
 			</div>	
 		</div>
@@ -142,6 +263,7 @@
 			<div class="row">
 				<div class="col-md-7">
 					<h2>Ie浏览器</h2>
+          <p>Internet Explorer是windows自带的浏览器，也是早期最多人使用的浏览器。即使是现在几种主流的几种浏览器，也都是基于IE浏览器的内核。个人觉得IE浏览器很适合普通的网民使用，它功能简单，运行也比较快，界面用户体验良好。也正是这些优点决定了IE浏览器成为了世上使用最广泛的浏览器。</p>
 				</div>
 				<div class="col-md-5">
 					<img src="images/ie-logo.jpg" alt="Ie">
